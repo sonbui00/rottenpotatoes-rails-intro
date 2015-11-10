@@ -46,7 +46,9 @@ group :development, :test do
   gem 'spring'
 
   gem 'rspec-rails'
-  gem 'autotest'
+  gem 'autotest-rails'
+  gem 'rspec-autotest'
+  gem 'autotest-inotify'
 end
 
 group :production do

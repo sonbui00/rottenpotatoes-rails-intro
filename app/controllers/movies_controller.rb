@@ -11,7 +11,8 @@ class MoviesController < ApplicationController
   end
 
   def index
-    @movies = Movie.all
+    @order_by = params[:order] ? params[:order].to_sym : :title
+    @movies = Movie.all.order(@order_by)
   end
 
   def new
